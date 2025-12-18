@@ -1,0 +1,7 @@
+#rank the scores in the database in ascending order, such that two identical scores get the same rank
+
+import pandas as pd
+import math 
+def order_scores(scores: pd.DataFrame) -> pd.DataFrame:
+    scores['rank'] = scores['score'].rank(method='dense', ascending=False)
+    return scores[['score','rank']].sort_values(by='rank')
