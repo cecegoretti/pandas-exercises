@@ -1,0 +1,14 @@
+#find the nth highest distinct salary from the employee database
+
+import pandas as pd
+
+def nth_highest_salary(employee: pd.DataFrame, N: int) -> pd.DataFrame:
+    t=set(employee['salary'])
+    if len(t)>=N and N>0:
+        a=list(t)
+        a.sort()
+        Nth=a[-N]
+    else:
+        Nth=None
+    col=f'getNthHighestSalary({N})'
+    return pd.DataFrame({col: [Nth]})
