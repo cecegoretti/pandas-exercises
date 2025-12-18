@@ -1,0 +1,13 @@
+#compute the second highest salary in the employee database
+
+def second_highest_salary(employee: pd.DataFrame) -> pd.DataFrame:
+    N=2
+    t=set(employee['salary'])
+    if len(t)>=N:
+        a=list(t)
+        a.sort()
+        Nth=a[-N]
+    else:
+        Nth=None
+    col='SecondHighestSalary'
+    return pd.DataFrame({col: [Nth]})
