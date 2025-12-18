@@ -1,6 +1,8 @@
 #find the information of the price for every item in the store at the day 2019-08-16 from a table that records the change in price of the products, 
 #starting value of every product is 10
 
+import pandas as pd
+
 def price_at_given_date(products: pd.DataFrame) -> pd.DataFrame:
     a=products[products['change_date']<=pd.to_datetime('2019-08-16')].sort_values(by='change_date').drop_duplicates(subset=['product_id'], keep='last')[['product_id','new_price']]
     ids= products['product_id'].unique()
