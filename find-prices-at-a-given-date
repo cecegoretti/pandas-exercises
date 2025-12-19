@@ -1,5 +1,7 @@
 #find the information of the price for every item in the store at the day 2019-08-16 from a table that records the change in price of the products, 
 #starting value of every product is 10
+#techniques used: drop_duplicates, unique, fillna, merge
+#original problem:https://leetcode.com/problems/product-price-at-a-given-date/
 
 import pandas as pd
 
