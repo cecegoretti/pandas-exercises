@@ -1,4 +1,6 @@
 #compute the second highest salary in the employee database
+#original problem: https://leetcode.com/problems/second-highest-salary/
+
 import panadas as pd
 
 def second_highest_salary(employee: pd.DataFrame) -> pd.DataFrame:
