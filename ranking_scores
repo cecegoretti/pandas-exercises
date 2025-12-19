@@ -1,4 +1,6 @@
-#rank the scores in the database in ascending order, such that two identical scores get the same rank
+#rank the scores in the database "scores" in ascending order, such that two identical scores get the same rank
+#tool used: rank
+#https://leetcode.com/problems/rank-scores/description/
 
 import pandas as pd
 import math 
