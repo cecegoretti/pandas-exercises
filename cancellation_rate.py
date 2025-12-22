@@ -1,3 +1,6 @@
+#exercise: https://leetcode.com/problems/trips-and-users/description/
+techniques used: groupby, merge, reset_index, astype()
+
 import pandas as pd
 
 def trips_and_users(trips: pd.DataFrame, users: pd.DataFrame) -> pd.DataFrame:
